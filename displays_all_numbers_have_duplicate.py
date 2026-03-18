@@ -6,5 +6,6 @@ for i in range(10):
 result = []
 for number_count in number_list:
     if number_list.count(number_count) != 1:
-        result.append(number_count)
+        if number_count not in result:
+            result.append(number_count)
 print(result)
